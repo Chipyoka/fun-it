@@ -10,8 +10,12 @@
   --white:#f1f1f1;
   --beige:#FCF5E2;
 
+  --grad-1:linear-gradient(90deg, #F0C52B 0%, rgba(223,59,148,1) 100%);
+
   --primary-font: 'Poppins', sans-serif;
   --secondary-font:'Carter One';
+
+  --bd-1: solid 2px var(--white);
 }
 
 *{
@@ -20,4 +24,105 @@
   box-sizing: border-box;
   
   font-family: var(--primary-font);
+}
+
+.container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+h1{
+  font-family: var(--secondary-font);
+}
+
+.btns{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 1.5em;
+}
+
+button{
+  font-family: var(--secondary-font);
+  padding: .75em 2.5em;
+  border-radius: 5px;
+  font-size: 1.05rem;
+}
+
+button:hover{
+  font-family: var(--secondary-font);
+  padding: .75em 2.5em;
+  border-radius: 5px;
+  font-size: 1.05rem;
+}
+
+.btn-outlined{
+  border: 2px solid var(--white);
+  background: none;
+  color: var(--white);
+
+}
+.btn-full{
+  background-color: #ffffff; /* Solid white background */
+  border: 1px solid #ccc;    /* Optional border */
+  cursor: pointer;
+
+
+
+}
+.btn-full span {
+  background: linear-gradient(90deg, #ff7e5f, #feb47b); /* Gradient colors */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text; /* For modern browsers */
+  color: transparent;
+
+  font-family: var(--secondary-font);
+}
+
+nav{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1em 2em;
+  background-color: var(--blue);
+}
+
+.logo{
+  color: var(--white);
+  letter-spacing: -0.05rem;
+  font-size: 2rem;
+}
+
+div.j{
+  width: 50%;
+
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  column-gap: 4em;
+}
+div.j ul{
+  cursor: pointer;
+
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  column-gap: 2em;
+}
+div.j ul>li{
+  list-style: none;
+  color: var(--white);
+  font-size: 1rem;
+  font-weight: 400;
+
+
+  border-bottom: solid 2px var(--blue);
+  transition: all 0.3s ease-in-out;
+
+}
+div.j ul>li:hover{
+border-bottom: solid 2px var(--white);
 }
