@@ -6,6 +6,8 @@ import HowItWorks from '../components/HowItWorks';
 import WeSupply from '../components/WeSupply';
 import Footer from '../components/Footer';
 
+import {Element } from "react-scroll";
+
 
 import Pattern from '../assets/pattern.png';
 
@@ -14,17 +16,32 @@ const Home = () => {
     return(
         <>
         <Navbar/>
-        <Hero/>
+       
+
+        <Element name="hero">
+            <Hero/>
+        </Element>
      
         <section className="pattern-overlay">
             <img src={Pattern} alt="A nice puzzle" />
             <img src={Pattern} alt="A nice puzzle" />
         </section>
 
+        <Element name="temp">
+            <Templates/>
+        </Element>
 
-        <Templates/>
-        <HowItWorks/>
-        <WeSupply/>
+
+        <Element name="how">
+            <HowItWorks/>
+        </Element>
+
+        <Element name="wesupply">
+            <WeSupply/>
+        </Element>
+
+    
+      
         <section className="pattern-overlay">
             <img src={Pattern} alt="A nice puzzle" />
             <img src={Pattern} alt="A nice puzzle" />
