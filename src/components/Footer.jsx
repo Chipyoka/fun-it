@@ -3,7 +3,12 @@ import React from 'react';
 const Footer = () => {
     return(
         <footer>
-            <p>&copy; 2025 All Rights Reserved. Funit by Moontipo</p>
+            
+            <div className="text-center">
+            <p><span class="lg">Fun-it </span> by Moontipo 🚀</p>
+            <p>&copy; 2025 All Rights Reserved. | Terms of user | Privacy Policy</p>
+
+            </div>
 
         </footer>
     )

@@ -10,6 +10,7 @@ import {Element } from "react-scroll";
 import ScrollToTopButton from "../components/ScrollToTop";
 
 
+
 import Pattern from '../assets/pattern.png';
 
 const Home = () => {

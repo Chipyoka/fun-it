@@ -17,7 +17,7 @@ const Templates = () => {
                 Then upload. We'll handle the flex, finesse, and 
                 fulfillment. For hustlers, dreamers, event planners, and design-droppers.
             </p>
-            <button className="btn-full">Try Fun-it for Free</button>
+            <button className="btn-full">Get Started Now !</button>
          </aside>
          <aside className="container temp-grid">
             <div className="col">

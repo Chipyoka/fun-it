@@ -57,8 +57,16 @@
 
 }
 
+.lg{
+  font-family: var(--secondary-font);
+  font-size: 1.5rem;
+}
 h1, h2{
   font-family: var(--secondary-font);
+}
+
+.text-center{
+  text-align: center;
 }
 
 .btns{
