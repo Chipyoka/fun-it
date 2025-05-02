@@ -163,15 +163,15 @@ section.hero p{
 }
 
 .pattern-overlay {
-  position: fixed;
+  position: absolute;
   /* top:9%; */
   bottom: 0;
   right: 0;
   width: 100%; /* adjust to suit design */
   height: auto;
-  z-index: 0; /* ensure it's behind interactive content */
+  z-index: 4; /* ensure it's behind interactive content */
   pointer-events: none; /* allow interaction through it */
-  opacity: .6; /* optional: control pattern intensity */
+  opacity: .4; /* optional: control pattern intensity */
 
   justify-content: space-between;
   display: flex;
@@ -185,7 +185,7 @@ section.hero p{
 
 section.templates{
   background: var(--grad-1);
-  height: 100dvh;
+  height: 115dvh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -255,7 +255,7 @@ aside.temp-grid{
 section.how-it-works{
   z-index: 3;
   background: var(--white);
-  height: 100dvh;
+  height: 115dvh;
   text-align: center;
 
   justify-content: center;
@@ -331,10 +331,9 @@ h2 span{
 section.we-supply{
   background-color: var(--blue);
   color: var(--white);
-  height: 90dvh;
+  height: 115dvh;
 
   padding: 1em 10em;
- 
 
   
 }
@@ -360,4 +359,14 @@ section.we-supply aside.we-text p{
   margin-bottom: 1em;
 }
 
+footer{
+  background-color: var(--black);
 
+  justify-content: center;
+  align-items: center;
+  display: flex;
+
+  color: var(--beige);
+
+  height: 10dvh;
+}
