@@ -5,7 +5,7 @@ const Templates = () => {
         <>
         <section className="templates">
          <aside className="temp-text">
-            <h2>You Bring the Art, We Bring the Merch.</h2>
+            <h2>Just Bring Your Art.</h2>
             <p>
                 Just upload. We'll handle the flex, finesse, and 
                 fulfillment. For hustlers, dreamers, event planners, and design-droppers.

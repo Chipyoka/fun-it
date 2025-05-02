@@ -52,7 +52,7 @@ button{
   font-family: var(--secondary-font);
   padding: .75em 2.5em;
   border-radius: 5px;
-  font-size: 1.05rem;
+  font-size: 1.35rem;
   cursor: pointer;
 }
 
@@ -62,13 +62,13 @@ button:hover{
 }
 
 .btn-outlined{
-  border: 2px solid var(--white);
+  border: 3px solid var(--white);
   background: none;
   color: var(--white);
 
 }
 .btn-grad{
-  border: 2px solid var(--white);
+  border: 3px solid var(--white);
   background: var(--grad-1);
   color: var(--white);
 
@@ -102,7 +102,7 @@ nav{
 .logo{
   color: var(--white);
   letter-spacing: -0.05rem;
-  font-size: 2rem;
+  font-size: 2.75rem;
 }
 
 div.j{
@@ -124,16 +124,16 @@ div.j ul{
 div.j ul>li{
   list-style: none;
   color: var(--white);
-  font-size: 1rem;
+  font-size: 1.25rem;
   font-weight: 400;
 
 
-  border-bottom: solid 2px var(--blue);
+  border-bottom: solid 4px var(--blue);
   transition: all 0.3s ease-in-out;
 
 }
 div.j ul>li:hover{
-border-bottom: solid 2px var(--white);
+border-bottom: solid 4px var(--white);
 }
 
 
@@ -327,3 +327,37 @@ h2 span{
   font-style: italic;
 
 }
+
+section.we-supply{
+  background-color: var(--blue);
+  color: var(--white);
+  height: 90dvh;
+
+  padding: 1em 10em;
+ 
+
+  
+}
+section.we-supply aside div.img-container{
+  width:600px ;
+  height: 600px;
+  background-color: var(--beige);
+
+  border: solid 4px var(--white);
+  border-radius: 1em;
+  transform: rotate(1deg);
+  }
+section.we-supply aside{
+  width: 45%;
+}
+section.we-supply aside.we-text h2{
+  font-size: 3.5rem;
+  margin-bottom: .5em;
+  line-height: 1em;
+}
+section.we-supply aside.we-text p{
+  font-size: 1.5rem;
+  margin-bottom: 1em;
+}
+
+
