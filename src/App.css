@@ -341,10 +341,14 @@ section.we-supply aside div.img-container{
   width:600px ;
   height: 600px;
   background-color: var(--beige);
-
+   overflow: hidden;
+   object-fit: contain;
   border: solid 4px var(--white);
   border-radius: 1em;
   transform: rotate(1deg);
+  }
+section.we-supply aside div.img-container img{
+  width:100%;
   }
 section.we-supply aside{
   width: 45%;
