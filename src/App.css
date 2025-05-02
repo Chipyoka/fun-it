@@ -26,6 +26,10 @@
   font-family: var(--primary-font);
 }
 
+.mt{
+  margin-top: 2em;
+}
+
 .container{
   display: flex;
   justify-content: center;
@@ -33,7 +37,7 @@
 
 }
 
-h1{
+h1, h2{
   font-family: var(--secondary-font);
 }
 
@@ -49,18 +53,23 @@ button{
   padding: .75em 2.5em;
   border-radius: 5px;
   font-size: 1.05rem;
+  cursor: pointer;
 }
 
 button:hover{
-  font-family: var(--secondary-font);
-  padding: .75em 2.5em;
-  border-radius: 5px;
-  font-size: 1.05rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  transition: all 0.3s ease-in-out;
 }
 
 .btn-outlined{
   border: 2px solid var(--white);
   background: none;
+  color: var(--white);
+
+}
+.btn-grad{
+  border: 2px solid var(--white);
+  background: var(--grad-1);
   color: var(--white);
 
 }
@@ -125,4 +134,196 @@ div.j ul>li{
 }
 div.j ul>li:hover{
 border-bottom: solid 2px var(--white);
+}
+
+
+/* Hero styling */
+
+section.hero{
+  background-color: var(--blue);
+  height:88dvh ;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  color: var(--white);
+  z-index: 0;
+}
+
+section.hero h1{
+  font-size: 6.5rem;
+  margin-bottom: .5em;
+  line-height: 1em;
+}
+
+section.hero p{
+  font-size: 1.5rem;
+  margin-bottom: 1em;
+}
+
+.pattern-overlay {
+  position: fixed;
+  /* top:9%; */
+  bottom: 0;
+  right: 0;
+  width: 100%; /* adjust to suit design */
+  height: auto;
+  z-index: 0; /* ensure it's behind interactive content */
+  pointer-events: none; /* allow interaction through it */
+  opacity: .6; /* optional: control pattern intensity */
+
+  justify-content: space-between;
+  display: flex;
+}
+.pattern-overlay img {
+  width: 15%;
+  height: auto;
+}
+
+
+
+section.templates{
+  background: var(--grad-1);
+  height: 100dvh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* flex-direction: column; */
+  color: var(--white);
+  z-index: 2;
+  position: relative;
+
+  overflow: hidden;
+}
+
+section.templates h2{
+  font-size: 3.5rem;
+  margin-bottom: .5em;
+  line-height: 1em;
+}
+
+section.templates p{
+  font-size: 1.5rem;
+  margin-bottom: 1em;
+}
+
+aside.temp-text{
+  width: 40%;
+}
+
+aside.temp-grid{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  /* border: var(--bd-1); */
+  height: 90%;
+  overflow: hidden;
+
+}
+.col{
+  display: flex;
+  flex-direction: column;
+  animation: scrollUp 15s linear infinite;
+}
+
+
+
+/* Keyframes for infinite scroll */
+@keyframes scrollUp {
+  0% {
+    transform: translateY(50);
+  }
+  50% {
+    transform: translateY(-25%);
+  }
+  100% {
+    transform: translateY(25%);
+  }
+}
+
+.col div{
+  margin: 1em;
+  height: 300px;
+  width: 250px;
+  background-color: var(--beige);
+  transform: rotate(2deg);
+  border-radius: .5em;
+}
+
+section.how-it-works{
+  z-index: 3;
+  background: var(--white);
+  height: 100dvh;
+  text-align: center;
+
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+  
+}
+section.how-it-works h2{
+  font-size: 3.5rem;
+  margin-bottom: .5em;
+  line-height: 1em;
+}
+section.how-it-works p{
+  font-size: 1.5rem;
+  margin-bottom: 1em;
+}
+
+h2 span{
+
+  background: linear-gradient(90deg, #ff7e5f, #feb47b); /* Gradient colors */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text; /* For modern browsers */
+  color: transparent;
+
+  font-family: var(--secondary-font);
+
+}
+
+.steps-container{
+
+  margin-top: 6em;
+  gap: 2em;
+}
+
+.step{
+
+
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+}
+
+.step div{
+  height: 150px;
+  width: 150px;
+
+  background-color: var(--beige);
+  font-family: var(--secondary-font);
+  font-size: 2.5rem;
+
+  justify-content: center;
+  display: flex;
+  align-items: center;
+
+  border: solid 4px var(--yellow);
+  border-radius: .25em;
+  margin-bottom: .5em;
+
+  transform: rotate(2deg);
+}
+.step p{
+
+  font-size: .95rem !important;
+  font-style: italic;
+
 }
