@@ -7,6 +7,7 @@ import WeSupply from '../components/WeSupply';
 import Footer from '../components/Footer';
 
 import {Element } from "react-scroll";
+import ScrollToTopButton from "../components/ScrollToTop";
 
 
 import Pattern from '../assets/pattern.png';
@@ -47,6 +48,8 @@ const Home = () => {
             <img src={Pattern} alt="A nice puzzle" />
         </section>
         <Footer/>
+        
+        <ScrollToTopButton />
 
         </>
     )
