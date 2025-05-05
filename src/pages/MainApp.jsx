@@ -1,14 +1,18 @@
 import { React } from "react";
 
 import TopBar from '../components/app/TopBar'
+import ToolBar from '../components/app/ToolBar'
 
 const MainApp = () =>{
 
     return(
         <>
             <TopBar/>
-            <div>
-                <p>Hello app !</p>
+            <div className="canvas-space">
+                <div className="container">
+                    <ToolBar/>
+                </div>
+              
             </div>
 
         </>

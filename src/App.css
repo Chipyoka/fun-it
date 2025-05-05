@@ -9,6 +9,8 @@
   --black:#2c2c2c;
   --white:#f1f1f1;
   --beige:#FCF5E2;
+  --h: #a9a9a9;
+  --h: #808080;
 
   --grad-1:linear-gradient(90deg, #F0C52B 0%, rgba(223,59,148,1) 100%);
 
@@ -25,9 +27,15 @@
   
   font-family: var(--primary-font);
 }
+body{
+  color: var(--black);
+}
 
 .mt{
   margin-top: 2em;
+}
+.gap{
+  gap: 2em;
 }
 
 .top-btn{
@@ -452,9 +460,21 @@ div.topbar{
   padding: 1em 1.5em;
 
   color: var(--black);
+
+  
 }
 div.topbar .logo{
   color: var(--blue);
+  cursor: pointer;
+}
+
+.project-name{
+  font-size: 1.5rem;
+  font-weight: 500;
+
+  margin-left: 1em;
+  cursor: default;
+
 }
 
 .a-btn{
@@ -479,9 +499,56 @@ div.topbar .logo{
 }
 .a-icon-btn{
   font-family: var(--primary-font);
-  padding: .45em 1em;
+  padding: .65em 1em;
   border-radius: 5px;
   font-size: 1rem;
   cursor: pointer;
 }
 
+div.canvas-space{
+  width: 100%;
+  background-color: var(--white);
+  height: 88dvh;
+
+  /* display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; */
+}
+
+.toolbar{
+  z-index: 999;
+  position: absolute;
+  top: 8em;
+  right: 50em;
+  left: 50em;
+
+  background-color: #fff;
+  border-radius: .5em;
+  height: 64px;
+  width: 25em;
+
+  /* padding: .5em; */
+
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.toolbar .tool{
+  position: relative;
+  height: 64px;
+  width: 70px;
+  border-bottom: 4px solid white;
+
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.toolbar .tool:hover{
+  background-color: var(--white);
+
+}
