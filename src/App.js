@@ -1,6 +1,10 @@
 
 import {BrowserRouter as Router, Routes, Route} from 'react-router-dom'
 import './App.css';
+
+
+import 'tippy.js/dist/tippy.css';
+
 import Home from './pages/Home';
 import MainApp from './pages/MainApp';
 import OrderMerch from './pages/OrderMerch';

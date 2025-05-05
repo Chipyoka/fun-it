@@ -1,11 +1,12 @@
 import { React } from "react";
-import Navbar from '../components/Navbar'
+
+import TopBar from '../components/app/TopBar'
 
 const MainApp = () =>{
 
     return(
         <>
-            <Navbar/>
+            <TopBar/>
             <div>
                 <p>Hello app !</p>
             </div>
