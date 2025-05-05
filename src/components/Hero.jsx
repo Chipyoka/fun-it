@@ -1,6 +1,8 @@
 import React from 'react';
 import FadeInSection from "./FadeInSection";
 
+import {NavLink} from 'react-router-dom';
+
 const Hero = () => {
     return(
         <>
@@ -10,7 +12,10 @@ const Hero = () => {
             </FadeInSection>
                
                 <p>Your design, our merch — faster than your morning <br /> coffee brews.</p>
-                <button className="btn-grad">Try Fun-it for Free</button>
+          
+                <NavLink to="/app">
+                 <button className="btn-grad">Try Fun-it for Free</button>
+                </NavLink>
             </section>
         </>
     )

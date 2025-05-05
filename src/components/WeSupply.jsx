@@ -3,6 +3,7 @@ import React from 'react';
 import FadeInSection from "./FadeInSection";
 import We from '../assets/we-supply.jpg';
 
+import {NavLink} from 'react-router-dom';
 
 const WeSupply  = () => {
   return(
@@ -25,7 +26,11 @@ const WeSupply  = () => {
                                     We will source the merchandise, get it printed and 
                                     deliver it to you - Smooth.
                                 </p>
-                                <button className="btn-full"><span>Place an Order</span></button>
+                               
+                                <NavLink to="/order">
+
+                                    <button className="btn-full"><span>Place an Order</span></button>
+                                </NavLink>
                             </aside>
                         </div>
                 </FadeInSection>

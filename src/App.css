@@ -149,6 +149,13 @@ div.j ul{
   align-items: center;
   column-gap: 2em;
 }
+a, a:hover, a:visited, a:active{
+  text-decoration: none;
+  color: var(--white);
+  font-size: 1.25rem;
+  font-weight: 400;
+}
+
 div.j ul>li{
   list-style: none;
   color: var(--white);

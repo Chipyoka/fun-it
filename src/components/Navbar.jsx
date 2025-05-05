@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from "react-scroll";
+import {NavLink} from 'react-router-dom';
 
 const Navbar = () => {
 
@@ -11,15 +12,9 @@ const Navbar = () => {
                 <ul className="nav-links container">
               
                     <li>
-                        <Link
-                            to="hero"
-                            smooth={true}
-                            duration={500}
-                            spy={true}
-                            activeClass="active"
-                        >
+                        <NavLink to="/">
                             Home
-                        </Link>
+                        </NavLink>
                     </li>
                     <li>
                         <Link
